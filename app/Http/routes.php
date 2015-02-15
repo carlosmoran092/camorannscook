@@ -13,6 +13,10 @@
 
 Route::match(['get', 'post'], '/', function(){return 'Hello World';});
 
+Route::get('/profile', function(){
+    return view('profile/basic', ['name' => 'Carlos Moran']);
+});
+
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
