@@ -45,10 +45,12 @@ template {
 }
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 a:active,
 a:hover {
-  outline: 0;
+  outline: none;
+  text-decoration: none;
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -2964,9 +2966,32 @@ select[multiple].form-group-lg .form-control {
     padding-top: 6px;
   }
 }
+.btn-1 {
+position: relative;
+margin-bottom: 10px;
+  padding: 6px 6px;
+  margin-left: 2px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0px;
+}
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 9px 9px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
@@ -2983,7 +3008,7 @@ select[multiple].form-group-lg .form-control {
           user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 25px;
 }
 .btn:focus,
 .btn:active:focus,
@@ -2991,14 +3016,12 @@ select[multiple].form-group-lg .form-control {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+   outline: none;
 }
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 .btn:active,
@@ -3019,9 +3042,9 @@ fieldset[disabled] .btn {
   opacity: .65;
 }
 .btn-default {
-  color: #333;
+  color: #444;
   background-color: #fff;
-  border-color: #ccc;
+  border-color: #ddd;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -3029,9 +3052,9 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+ color: #333;
+  background-color: #fff;
+  
 }
 .btn-default:active,
 .btn-default.active,
@@ -3057,7 +3080,7 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
   background-color: #fff;
-  border-color: #ccc;
+  border-color: #fff;
 }
 .btn-default .badge {
   color: #fff;
@@ -4838,10 +4861,10 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding: 30px 15px;
+  padding: 10px 5px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: #fcfcfc;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -4857,19 +4880,19 @@ a.badge:focus {
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
-  border-radius: 6px;
+  border-radius: 3px;
 }
 .jumbotron .container {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding: 48px 0;
+    padding: 10px 0;
   }
   .container .jumbotron,
   .container-fluid .jumbotron {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .jumbotron h1,
   .jumbotron .h1 {
@@ -5123,10 +5146,10 @@ a.thumbnail.active {
 .list-group-item {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 6px 10px;
   margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
 }
 .list-group-item:first-child {
   border-top-left-radius: 4px;
@@ -5930,10 +5953,11 @@ button.close {
   left: 0;
   z-index: 1060;
   display: none;
-  max-width: 276px;
+  max-width: 300px;
+  width: 230px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: Yanone_Kaffeesatz,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: left;
@@ -5941,11 +5965,11 @@ button.close {
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: 6px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  border: 1px solid #fff;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 0px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
 }
 .popover.top {
   margin-top: -10px;
@@ -5963,9 +5987,9 @@ button.close {
   padding: 8px 14px;
   margin: 0;
   font-size: 14px;
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #ebebeb;
-  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+  /*border-bottom: 1px solid #ebebeb;*/
+  border-radius: 0px 0px 0 0;
 }
 .popover-content {
   padding: 9px 14px;

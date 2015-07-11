@@ -17,6 +17,10 @@ Route::get('/profile', function(){
     return view('profile/basic', ['name' => 'Carlos Moran']);
 });
 
+Route::get('/create', function(){
+    return view('create/basic');
+});
+
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
