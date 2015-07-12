@@ -1,38 +1,4 @@
-/*
-Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
-        on line 22 of corpo.sass
+.title-camorannscook {
+  font: Arial; }
 
-17:     font-family: fparrafo
-18:     src: url(../fonts/Kaushan_Script/KaushanScript-Regular.ttf)
-19: 
-20: .title-camorannscook{
-21: font: logo
-22:   weight: bold
-23: }
-
-Backtrace:
-corpo.sass:22
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/engine.rb:483:in `block in tabulate'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/engine.rb:441:in `each'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/engine.rb:441:in `each_with_index'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/engine.rb:441:in `tabulate'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/engine.rb:406:in `_to_tree'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/engine.rb:295:in `render_with_sourcemap'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `each'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:328:in `block in watch'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/vendor/listen/lib/listen/listener.rb:252:in `call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.15/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 22 of corpo.sass\A \A 17:     font-family: fparrafo\A 18:     src: url(../fonts/Kaushan_Script/KaushanScript-Regular.ttf)\A 19: \A 20: .title-camorannscook{\A 21: font: logo\A 22:   weight: bold\A 23: }"; }
+/*# sourceMappingURL=corpo.css.map */

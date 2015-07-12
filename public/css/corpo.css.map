@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";EACI,WAAW,EAAE,IAAI;EACjB,GAAG,EAAE,mCAAmC;;EAIxC,WAAW,EAAE,iBAAiB;EAC9B,GAAG,EAAE,0DAA0D;;EAI/D,WAAW,EAAE,IAAI;EACjB,GAAG,EAAE,yCAAyC;;EAI9C,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,sDAAsD",
-"sources": ["corpo.sass"],
+"mappings": "AAAA,oBAAoB;EACpB,IAAI,EAAE,KAAK",
+"sources": ["corpo.scss"],
 "names": [],
 "file": "corpo.css"
 }

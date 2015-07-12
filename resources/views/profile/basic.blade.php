@@ -52,7 +52,7 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 	<center>
 
-   <!---  -->
+   <!--- BUSQUEDA -->
 
 	 <div class="input-group">
 
@@ -60,7 +60,7 @@
 	       <div class="input-group-addon" id="btn-busqueda-av"><span class="glyphicon glyphicon-search"></span></div>
 	     </div>
 
-    <!---  -->
+  <!--- FIN BUSQUEDA  -->
 
 
     </center><br>

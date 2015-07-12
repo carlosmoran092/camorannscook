@@ -1,5 +1,7 @@
 {
-  "devDependencies": {
+"name": "CamorannsCook",
+"description": "Sitio web Carlos Moran",
+"devDependencies": {
     "gulp": "^3.8.8",
     "laravel-elixir": "*"
   }
