@@ -21,16 +21,22 @@
 
 
 #contenedor_publicaciones{}
-
+/* NOTE:  */
 .title-camorannscook{font-family: Lobster; font-size: 37px; font-weight: bold; padding-left: 25px;}
 .opc-menu{padding-bottom: 18px; padding-left: 10%;}
 .title-article{font-family: Kaushan_Script, Arial}
 #input-cm{height: 60px; font-size: 35px; font-family: Abel}
 .input-group-addon>#btn-busqueda-av{width: 60px}
 .title-article-history{font-family: Abel, serif;}
-
+.input-create{height: 40px;font-size: 18px; font-family: Abel;}
+.btn-go-create{color: #333; background: #fff; border: 1px solid #666}
+.btn-go-create:focus,.btn-go-create:hover{color: #000;}
+.input-create:focus{box-shadow: 0px 0px #fff; }
 .parrafo{font-family:Yanone_Kaffeesatz; font-size: 18px;}
 
+.cretion-panel{font-family: Abel}
+.cretion-panel label{font-size: 18px;}
+.separador{width: 100%; margin: 1px 0px 1px 0px;}
 .articulo{border-bottom: 1px solid #ccc; padding-bottom: 4px;}
 
 .header-camorannscook{width: 100%; height: 65px; background: #fff; padding-right: 25px; border-bottom: 3px solid #555;}

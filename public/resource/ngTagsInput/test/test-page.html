@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <title>ngTagsInput Test Page</title>
+  <script type="text/javascript" src="lib/angular.js"></script>
+  <script type="text/javascript" src="lib/ng-stats.min.js"></script>
+  <script type="text/javascript" src="../build/ng-tags-input.js"></script>
+  <link rel="stylesheet" href="../build/ng-tags-input.css"/>
+
+  <style>
+    .stats {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      padding: 10px;
+      margin: 10px;
+      z-index: 9999;
+      background-color: #000;
+      color: lime;
+      font: 15px "Lucida Console", Monaco, monospace;
+    }
+  </style>
+</head>
+
+<body ng-controller="Ctrl">
+  <tags-input ng-model="tags" add-on-blur="false" ng-focus="focus()" ng-blur="blur()" add-on-paste="true" paste-split-pattern="[,;|]" spellcheck="false" display-property="name" template="tag-template">
+      <auto-complete source="loadItems($query)" min-length="1" load-on-down-arrow="true" load-on-focus="true" load-on-empty="true" template="autocomplete-template"></auto-complete>
+  </tags-input>
+
+  <script type="text/ng-template" id="tag-template">
+    <div style="float: left;">
+      <img ng-src="{{data.picture}}" width="20" height="20" style="vertical-align: middle"/>
+    </div>
+    <div style="float: left; padding-left: 2px">
+      <span>{{$getDisplayText()}}</span>
+      <a class="remove-button" ng-click="$removeTag()">&times;</a>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="autocomplete-template">
+    <div>
+      <div style="float: left">
+        <img ng-src="{{data.picture}}" width="64" height="64"/>
+      </div>
+      <div style="float:left; margin-left: 5px">
+        <div><span ng-bind-html="$highlight(data.name)"></span></div>
+        <div style="margin-top: 5px">
+          <div><span style="font-style: italic; font-size: 14px">{{data.realname}}</span></div>
+          <div><span style="font-style: italic; font-size: 14px">{{data.city}}</span></div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <div class="stats" angular-stats watch-count=".watch-count" digest-length=".digest-length">
+    $watch : <span class="watch-count"></span><br />
+    $digest: <span class="digest-length"></span>ms
+  </div>
+
+  <script type="text/javascript">
+    angular.module('app', ['ngTagsInput', 'angularStats'])
+        .controller('Ctrl', function($scope) {
+            var superheroes = [
+              {
+                name: 'Batman',
+                realname: 'Bruce Wayne',
+                city: 'Gotham City',
+                picture: 'http://www.xboxachievements.com/forum/customavatars/avatar393936_1.gif'
+              },
+              {
+                name: 'Superman',
+                realname: 'Clark Kent',
+                city: 'Metropolis',
+                picture: 'http://s6047.storage.proboards.com/3246047/a/N03FIKtlEA7eli2Bighw.jpg'
+              },
+              {
+                name: 'Iron Man',
+                realname: 'Tony Stark',
+                city: 'New York',
+                picture: 'http://static.planetminecraft.com/files/avatar/1641115_0.jpg'
+              },
+              {
+                name: 'Spiderman',
+                realname: 'Peter Park',
+                city: 'New York',
+                picture: 'http://avatarbox.net/avatars/img30/spider_m_a_n_avatar_picture_39548.jpg'
+              },
+              {
+                name: 'Green Lantern',
+                realname: 'Hal Jordan',
+                city: 'Coast City',
+                picture: 'http://www.hcrealms.com/forum/image.php?u=23873&dateline=1332599251'
+              },
+            ];
+
+            $scope.tags = [];
+            $scope.placeholder = 'New tag';
+            $scope.loadItems = function(query) {
+              return superheroes.filter(function(superhero) {
+                return superhero.name.toLowerCase().indexOf(query.toLowerCase()) > -1;
+              });
+            };
+
+            $scope.focus = function() {
+                console.log('focus');
+            };
+
+            $scope.blur = function() {
+              console.log('blur');
+            };
+        })
+        .directive('limitTags', function() {
+          return {
+            require: 'ngModel',
+            link: function(scope, elem, attrs, ngModel) {
+                var max = parseInt(attrs.limitTags, 10);
+                ngModel.$parsers.unshift(function(value) {
+                    if (value && value.length > max) {
+                      value.splice(value.length - 1, 1);
+                    }
+                    return value;
+                });
+            }
+          };
+        })
+        .config(function(tagsInputConfigProvider) {
+            tagsInputConfigProvider
+              .setDefaults('tagsInput', {
+                placeholder: 'New tag'
+              })
+              .setDefaults('autoComplete', {
+                highlightMatchedText: true
+              });
+        });
+  </script>
+</body>
+</html>
