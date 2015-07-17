@@ -48,7 +48,7 @@
 
 <!--  -->
 
-<div class="col-xs-6 col-sm-6 col-md-8 col-lg-8" >
+<div class="col-xs-6 col-sm-6 col-md-10 col-lg-10" >
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 	<center>
 
@@ -56,7 +56,7 @@
 
 	 <div class="input-group">
 
-	       <input type="text" class="form-control" id="input-cm" placeholder="Amount">
+	       <input type="text" class="form-control" id="input-cm" placeholder="Search">
 	       <div class="input-group-addon" id="btn-busqueda-av"><span class="glyphicon glyphicon-search"></span></div>
 	     </div>
 
@@ -141,16 +141,7 @@
 </div>
 
 <!--  -->
-<div class="col-md-2">
 
-
-<ul class="list-group ">
-  <li class="list-group-item info-camorannscook mini"><i class="icon-jobs"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-  <li class="list-group-item info-camorannscook mini"><i class="icon-location-3"></i> Bogotá, Colombia</li>
-
-</ul>
-
-</div>
 <br>
 
 

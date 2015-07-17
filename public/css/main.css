@@ -26,13 +26,17 @@
 .opc-menu{padding-bottom: 18px; padding-left: 10%;}
 .title-article{font-family: Kaushan_Script, Arial}
 #input-cm{height: 60px; font-size: 35px; font-family: Abel}
+/* NOTE:  */
+.neutro{border: 0px solid #666; border-bottom: 1px solid #ccc; box-shadow: 0px 0px #fff; border-radius: 2px;}
+.neutro:focus{box-shadow: 0px 0px #fff;}
 .input-group-addon>#btn-busqueda-av{width: 60px}
 .title-article-history{font-family: Abel, serif;}
-.input-create{height: 40px;font-size: 18px; font-family: Abel;}
+.input-create{height: 40px;font-size: 18px; font-family: Abel; border-radius: 2px;}
 .btn-go-create{color: #333; background: #fff; border: 1px solid #666}
 .btn-go-create:focus,.btn-go-create:hover{color: #000;}
 .input-create:focus{box-shadow: 0px 0px #fff; }
 .parrafo{font-family:Yanone_Kaffeesatz; font-size: 18px;}
+.btn-basic{border-radius: 3px;}
 
 .cretion-panel{font-family: Abel}
 .cretion-panel label{font-size: 18px;}
